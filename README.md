@@ -1,0 +1,2 @@
+# 2.SEMF2019
+KEA - 2. SEM. PRØVEN - F2019 
