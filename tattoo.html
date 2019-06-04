@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Tattorium - Eksamensprojekt 2019</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex, nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Tattorium. Tatovør i Københan og Bornholm efter aftale. Blueprint: A basic template for a page stack navigation effect" />
@@ -18,6 +18,210 @@
 
     <script src="js/modernizr-custom.js"></script><!-- Modernizr tells you what HTML, CSS and JavaScript features the user's browser has to offer -->
     <style>
+        h1 {
+            padding-left: 1em
+        }
+
+        header.bp-header.cf {
+            background-color: #232323;
+        }
+
+        img.billede {
+            z-index: 100;
+        }
+
+        #anchor {
+            text-align: center
+        }
+
+        .menu {
+            text-align: center;
+            margin-top: 2em;
+            margin-bottom: 1em;
+        }
+
+        .valgt {
+            color: #3D5BA9;
+            transition: ease-in 0.6s;
+        }
+
+        .liste {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        img {
+            grid-column: 1 / span 2;
+            grid-row: 1;
+            width: 100%;
+        }
+
+        #hr1 {
+            border: 3px dotted #312a09;
+            border-style: none none dotted;
+
+        }
+
+        #hr2 {
+            border: 2px solid #312a09;
+            margin-top: -5px;
+            margin-bottom: -5px;
+        }
+
+        #hr3 {
+            border: 2px solid #312a09;
+            margin-top: -5px;
+            margin-bottom: -5px;
+        }
+
+        #hr4 {
+            border: 3px dotted #312a09;
+            border-style: none none dotted;
+        }
+
+        #combineH2Hr {
+            grid-column: 1 / span 2;
+            grid-row: 2;
+            text-align: center;
+        }
+
+        p.center {
+            text-align: center;
+            font-size: 1rem;
+            line-height: 0.1px;
+            font-weight: bold;
+        }
+
+        header #open {
+            display: block;
+            margin: 0 auto;
+            text-align: center !important;
+            max-width: 80%;
+            padding: 4vw 0 0 0;
+        }
+
+        #popup {
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            display: none;
+            overflow: scroll;
+            z-index: 1;
+        }
+
+        #popup::-webkit-scrollbar {
+            display: none;
+        }
+
+        #indhold {
+
+            width: 70vw;
+            margin: 1rem auto;
+            background-color: transparent;
+            padding: 5px;
+            transition: ease-in 2s;
+            margin: 0 auto;
+            padding: 2px;
+            border: 2px solid black;
+        }
+
+        #luk {
+            position: fixed;
+            margin-top: 2rem;
+            padding-right: 2rem;
+        }
+
+        #luk button {
+            font-size: 2rem;
+            position: fixed;
+            right: 2%;
+            background-color: #fdf6d5;
+        }
+
+        #container {
+            display: block;
+            position: relative;
+        }
+
+        .retter {
+            display: grid;
+            grid-gap: 1px;
+            padding: 1px;
+            border: 4.5px solid #232323;
+            padding: 0px;
+            transition: ease-in 2s;
+            margin: 1.8em;
+            cursor: pointer;
+            height: auto;
+            background-color: #383838;
+        }
+
+        #ret {
+            display: grid;
+            grid-gap: 1px;
+            border: 8px double #e81d21;
+            padding: 0em;
+            transition: ease-in 2s;
+            margin: 1em;
+            cursor: pointer;
+            max-height: 500px;
+            overflow: auto;
+            background-color: #fdf6d5;
+            z-index: 1;
+        }
+
+        article #ret {
+            padding: 5px;
+            background: none;
+            border: 2px solid black;
+        }
+
+        #align {
+            grid-column: 1 / span 2;
+            grid-row: 5;
+            display: inline-block;
+        }
+
+        .grid-container {
+            display: grid;
+            background: #e81d21;
+            color: #312C14;
+            border: 15px double #fdf6d5;
+            z-index: -10;
+        }
+
+        .grid-container--fill {
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            overflow: hidden;
+        }
+
+        article.retter {
+            max-width: 100%;
+        }
+
+        article {
+            padding: 5px;
+            border: 2px solid black;
+        }
+
+        .openBtn {
+            font-size: 40px;
+            cursor: pointer;
+            margin-left: 1rem !important;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0 !important;
+        }
+
+        .closebtn {
+            font-size: 60px;
+            clear: both;
+            margin-top: -3rem;
+            margin-left: 1rem;
+            color: #312C14;
+        }
+
         .overskrift {
             padding-top: 1em;
             text-align: center;
@@ -35,50 +239,166 @@
             color: #ffffff;
         }
 
-        form {
-            margin: 6vw;
+        .topnav {
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            margin: 0 auto;
+            padding: 1em;
+            padding-top: 5em;
         }
 
-        label {
-            color: black;
+        .topnav a {
+            float: left;
+            color: red;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
         }
 
-        .container {
-            padding: 20px;
+        .topnav a:hover {
+            color: #FFF;
         }
 
-        input[type=text],
-        input[type=submit] {
-            width: 100%;
-            padding: 12px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 2px solid #5c5edc;
-            box-sizing: border-box;
+        .topnav-centered a {
+            float: none;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
-        input[type=checkbox] {
-            margin-top: 16px;
+        /* Responsive navigation menu (for mobile devices) */
+        @media screen and (max-width: 600px) {
+            .topnav-centered a {
+                position: relative;
+                top: 0;
+                left: 0;
+                transform: none;
+            }
         }
 
-        input[type=submit] {
-            max-width: 100%;
-            background-color: #FF0101;
-            color: white;
-            border: none;
+        @media screen and (max-width: 576px) {
+            .retter {}
+
+            article.retter {
+                max-width: 100%;
+            }
+
+            #ret {
+                display: grid;
+                grid-gap: 10px;
+                padding: 1px;
+                border: 5px double #e81d21;
+                margin: 0em;
+                width: 100%;
+            }
+
+            .grid-container--fill {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                float: none;
+
+            }
         }
 
-        input[type=submit]:hover {
-            opacity: 0.8;
+        @media screen and (min-width: 420px) {
+            header #open {
+                display: block;
+                margin: 0 auto;
+                text-align: center !important;
+                max-width: 60%;
+                padding: 3vw 0 0 0;
+            }
         }
 
-        .widget-title {
-            padding-top: 1em;
+        @media screen and (min-width: 576px) {
+            .liste {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            header #open {
+                display: block;
+                margin: 0 auto;
+                text-align: center !important;
+                max-width: 45%;
+                padding: 3vw 0 0 0;
+            }
         }
+
+
+        @media only screen and (min-width: 768px) {
+            header #open {
+                display: block;
+                margin: 0 auto;
+                text-align: center !important;
+                max-width: 40%;
+                padding: 2vw 0 0 0;
+            }
+
+            .grid-container--fill {
+                grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+                overflow: hidden;
+            }
+
+            .topnav {
+                position: relative;
+                overflow: hidden;
+                text-align: center;
+                margin: 0 auto;
+                padding: 1em;
+                padding-top: 6em;
+            }
+        }
+
+        @media only screen and (min-width: 992px) {
+            header #open {
+                display: block;
+                margin: 0 auto;
+                text-align: center !important;
+                max-width: 33%;
+                padding: 2vw 0 0 0;
+            }
+
+            .grid-container--fill {
+                grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+                overflow: hidden;
+            }
+
+            form {
+                grid-column: 2;
+                grid-row: 5;
+                padding: 0rem;
+            }
+        }
+
+        @media only screen and (min-width: 1024px) {
+
+            .liste {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+
+        @media only screen and (min-width: 1200px) {
+            header #open {
+                display: block;
+                margin: 0 auto;
+                text-align: center !important;
+                max-width: 30%;
+                padding: 1vw 0 0 0;
+            }
+        }
+
     </style>
 </head>
 
 <body>
+    <div id="popup">
+        <div id="luk">
+            <button>X</button>
+        </div>
+        <div id="indhold"></div>
+    </div>
     <!-- navigation -->
     <nav class="pages-nav">
         <div class="pages-nav__item"><a href="index.html">HJEM</a></div>
@@ -92,7 +412,7 @@
             <a class="link link--social link--faded" href="https://www.instagram.com/tattorium/?hl=da" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i><span class="text-hidden">Instagram</span></a>
             <a class="link link--social link--faded" href="https://www.facebook.com/tattoriumcph/?eid=ARCZ7h-iDleVcNjnbfY16TGQxQ_SMBqkGaSgJyYBVzAgAjEdnWizBGH_vc687ujpgq5vgvdkXIlbXbfF&timeline_context_item_type=intro_card_work&timeline_context_item_source=690661960&fref=tag" target="_blank"><i class="fa fa-facebook"></i><span class="text-hidden">Facebook</span></a>
             <a class="link link--social link--faded" href="https://www.pinterest.dk/Tattorium/" target="_blank"><i class="fa fa-pinterest"></i><span class="text-hidden">Pinterest</span></a>
-            <a class="link link--social link--faded" href="https://www.youtube.com/embed/Cg1Ppo8TyHs" frameborder="4" allowfullscreen target="_blank"><i class="fa fa-youtube-play"></i><span class="text-hidden">YouTube</span></a>
+            <a class="link link--social link--faded" href="https://www.youtube.com/embed/Cg1Ppo8TyHs" target="_blank"><i class="fa fa-youtube-play"></i><span class="text-hidden">YouTube</span></a>
         </div>
     </nav>
     <!-- /navigation-->
@@ -100,16 +420,34 @@
     <div class="pages-stack">
         <!-- page -->
         <div class="page" id="page-home">
-            <!-- Rest Api indhold-->
-            <div class="area-wrapper">
-                <main class="tattoo">
-                    <h1 class="title" class="pagesGrid-item"></h1>
-                    <section class="indhold" class="pagesGrid-item-container"></section>
-                </main>
-            </div><!-- /Rest Api indhold-->
+            <div class="topnav" id="list">
+                <div class="topnav-centered">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <ul>
+                        <a href="#anchor" class="filter" data-hold="alle" onclick="closeNav()">
+                            Tattoo
+                        </a>
+                        <a href="#anchor" class="filter" data-hold="animal" onclick="closeNav()">
+                            Animal
+                        </a>
+                        <a href="#anchor" class="filter" data-hold="fullback" onclick="closeNav()">
+                            Fullback
+                        </a>
+                        <a href="#anchor" class="filter" data-hold="horro" onclick="closeNav()">Horro</a>
+                        <a href="#anchor" class="filter" data-hold="oldSchool" onclick="closeNav()">
+                            Old School
+                        </a>
+                        <a href="#anchor" class="filter" data-hold="realism" onclick="closeNav()">
+                            Realisme
+                        </a>
+                    </ul>
+
+                </div>
+                <div class="liste"></div>
+            </div>
             <!-- Blueprint header -->
             <header class="bp-header cf">
-
+                <!-- Top navigation -->
                 <h1 class="widget-title">GIVE UP BAD TATTOOS FOR GOOD</h1>
                 <span class="bp-header__present">Realistic Tattoo's </span>
                 <p class="bp-header__desc">Tattovør <a href="https://www.deviantart.com/nis-staack/art/viking-at-hastings-386831493"> Nis Staack</a></p>
@@ -175,9 +513,9 @@
                             <li class="grid-item">
                                 <h2 class="footer-list">Værd a vide</h2>
                                 <ul class="grid-item1">
-                                    <a href="vedligehold.html">
-                                        <li>Før & efter</li>
-                                    </a>
+                                    <li><a href="vedligehold.html">
+                                            Før & efter
+                                        </a></li>
                                     <li>
                                         <a href="policy.html">Vores policy</a>
                                     </li>
@@ -193,7 +531,7 @@
                     </div>
                 </div>
             </footer>
-        </div><!-- /page -->
+        </div><!-- /pages-->
         <div class="page">
         </div>
         <div class="page">
@@ -209,34 +547,73 @@
             </header>
         </div>
     </div><!-- /pages-stack -->
-    <!-- Copyright -->
-    <!--Script-->
+    <!-- Script -->
     <script>
-        let indhold = {};
-        let tattoo = [];
-
         document.addEventListener("DOMContentLoaded", start);
-
-        function start() {
-            hentJson();
+        let alleRetter = [];
+        let filter = "alle";
+        const dest = document.querySelector(".liste");
+        async function start() {
+            const myJson = await fetch("tattoos.json");
+            alleRetter = await myJson.json();
+            alleRetter.sort((a, b) => {
+                return a.navn.localeCompare(b.navn)
+            });
+            visRet();
         }
 
-        async function hentJson() {
-            let url = "http://medicinolie.dk/semester2F2019/wordpress/wp-json/wp/v2/booking/15";
-            let jsonData = await fetch(url);
-            indhold = await jsonData.json();
-            console.log(indhold);
-            visIndhold();
-        }
+        function visRet() {
+            dest.innerHTML = "";
+            alleRetter.forEach(ret => {
+                if (filter == "alle" || filter == ret.kategori) {
+                    let template = `
+                    <article class="retter">
+                        <img src="imgs/small/${ret.billede}-sm.jpg" alt ="${ret.navn}">
+                        <h2>${ret.navn}</h2>
+                    </article>`;
+                    dest.insertAdjacentHTML("beforeend", template);
+                    dest.lastElementChild.addEventListener("click", () => {
+                        visSingle(ret)
+                    });
 
-        function visIndhold() {
-            document.querySelector(".title").textContent = indhold.title.rendered;
-            document.querySelector(".indhold").innerHTML = indhold.content.rendered;
+                    function visSingle(ret) {
+                        document.querySelector("#indhold").innerHTML = `
+                    <article class="retter" id="ret">
+                            <img class = "billede" src ="imgs/large/${ret.billede}.jpg" alt = "${ret.navn}">
+                            <div id="combineH2Hr"><hr id=hr1><hr id=hr2><h2>${ret.navn}</h2><hr id=hr3><hr id=hr4></div>
+                        </article>`;
+                        document.querySelector("#popup").style.display = "block";
+                        document.querySelector("#popup #luk").addEventListener("click", close);
+                    }
+
+                    function close() {
+                        document.querySelector("#popup").style.display = "none";
+                    }
+                }
+            })
         }
+        document.querySelectorAll(".filter").forEach(elm => {
+            elm.addEventListener("click", filtrering);
+        })
+
+        function filtrering() {
+            filter = this.getAttribute("data-hold");
+            document.querySelector("h1").textContent = this.textContent;
+            document.querySelectorAll(".filter").forEach(elm => {
+                elm.classList.remove("valgt");
+            })
+            this.classList.add("valgt");
+            visRet();
+        }
+        start();
+
     </script>
+
     <!--/Script-->
 
     <button class="menu-button"><span>Menu</span></button>
     <script src="js/classie.js"></script>
     <script src="js/main.js"></script>
-</body></html>
+</body>
+
+</html>
