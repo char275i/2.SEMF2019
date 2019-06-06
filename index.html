@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Tattorium - Eksamensprojekt 2019</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex, nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Tattorium. Tatovør i Københan og Bornholm efter aftale. Blueprint: A basic template for a page stack navigation effect" />
@@ -17,6 +17,31 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
     <script src="js/modernizr-custom.js"></script><!-- Modernizr tells you what HTML, CSS and JavaScript features the user's browser has to offer -->
+    <style>
+        .tattooIco {
+            background-image: url('tattooIco.svg');
+        }
+
+        .tattooChair {
+            background-image: url('tattooChair.svg');
+        }
+
+        .artists {
+            background-image: url('painter.svg');
+        }
+
+        .deviantart {
+            background-image: url('deviantart.svg');
+        }
+
+        .guestArtists {
+            background-image: url('guestArtist.svg');
+            background-repeat: no-repeat;
+            width: 7em;
+            height: 7em;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -26,8 +51,8 @@
         <div class="pages-nav__item"><a href="tattoo.html">TATTOOS</a></div>
         <div class="pages-nav__item"><a href="booking.html">BOOKING</a></div>
         <div class="pages-nav__item"><a href="info.html">INFO</a></div>
-        <div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="wish.html">Wish-List</a></div>
-        <div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="artist.html">Guest Artists</a></div>
+       <a class="pages-nav__item pages-nav__item--small" href="wish.html">Wish-List</a>
+        <a class="pages-nav__item pages-nav__item--small" href="artist.html">Guest Artists</a>
         <div class="pages-nav__item pages-nav__item--social">
             <a class="link link--social link--faded" href="https://www.deviantart.com/nis-staack/art/viking-at-hastings-386831493" target="_blank"><i class="fa fa-deviantart"></i><span class="text-hidden">Deviantart</span></a>
             <a class="link link--social link--faded" href="https://www.instagram.com/tattorium/?hl=da" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i><span class="text-hidden">Instagram</span></a>
@@ -48,11 +73,11 @@
                 <span class="bp-header__present">Realistic Tattoo's </span>
                 <p class="bp-header__desc">Tattovør <a href="https://www.deviantart.com/nis-staack/art/viking-at-hastings-386831493"> Nis Staack</a></p>
                 <nav class="bp-nav">
-                    <a class="bp-nav__item bp-icon tattooIco" href="tattoo.htlm" data-info="Se Tattoos"><span>Tattoes</span></a>
-                    <a class="bp-nav__item bp-icon artists" href="artist.html"><span>Guest Artist</span><br></a>
-                    <a class="bp-nav__item bp-icon tattooChair" href="booking.html" data-info="Bestil tid til en tattoo"><span>Booking</span></a>
+                    <a class="bp-nav__item bp-icon tattooIco" href="tattoo.htlm" data-info="Se Tattoos"><img class="tattooIco" src="tattooIco.svg" alt="Tattorium tattoo" title="Tattorium tattoo" /><span>Tattoes</span></a>
+                    <a class="bp-nav__item bp-icon artists" href="artist.html"><img class="artists" src="painter.svg" alt="Tattorium tattoo" title="Tattorium tattoo" /><span>Guest Artist</span><br></a>
+                    <a class="bp-nav__item bp-icon tattooChair" href="booking.html" data-info="Bestil tid til en tattoo"><img class="tattooChair" src="tattooChair.svg" alt="Tattorium tattoo" title="Tattorium tattoo" /> <span>Booking</span></a>
                     <p class="center">Guest Artist</p>
-                    <a href="index.html"><img class="tattooLogo" src="images/logo.svg" alt="Logo Tattorium" title="Tattorium" /></a>
+                    <a href="index.html"><img class="tattooLogo" src="logo.svg" onerror="this.src='logo.png'" alt="Logo Tattorium" title="Tattorium" /></a>
                 </nav>
             </header>
             <!-- /header -->
@@ -66,7 +91,7 @@
                         </p>
                         <div class="white-back">
                             <div class="trustpilot-widget" data-locale="da-DK" data-template-id="539ad60defb9600b94d7df2c" data-businessunit-id="51e66d51000064000559e352" data-style-height="230px" data-style-width="100%" data-theme="light" data-stars="1,2,3,4,5" style="position: relative; color: #ffffff;">
-                                <iframe style="position: relative; height: 230px; width: 100%; border-style: none; display: block; overflow: hidden; color: #ffffff;" scrolling="no" title="Customer reviews powered by Trustpilot" src="http://widget.trustpilot.com/trustboxes/539ad60defb9600b94d7df2c/index.html?templateId=539ad60defb9600b94d7df2c&amp;businessunitId=51e66d51000064000559e352#locale=da-DK&amp;styleHeight=230px&amp;styleWidth=100%25&amp;theme=light&amp;stars=1%2C2%2C3%2C4%2C5" frameborder="2">
+                                <iframe style="position: relative; height: 230px; width: 100%; border-style: none; display: block; overflow: hidden; color: #ffffff;" scrolling="no" title="Customer reviews powered by Trustpilot" src="http://widget.trustpilot.com/trustboxes/539ad60defb9600b94d7df2c/index.html?templateId=539ad60defb9600b94d7df2c&businessunitId=51e66d51000064000559e352#locale=da-DK&styleHeight=230px&styleWidth=100%25&theme=light&stars=1%2C2%2C3%2C4%2C5" frameborder="2">
                                 </iframe>
                             </div>
                         </div><!-- white-back -->
@@ -140,7 +165,7 @@
                     </div>
                     <div class="copyright">
                         <div class="red-box">
-                            <div class="inner-right">Web Design by itgraphic.dk.&nbsp; © 2019<a href="itgraphic.dk" target="_blank"></a>
+                            <div class="inner-right">Web Design by itgraphic.dk.  © 2019<a href="itgraphic.dk" target="_blank"></a>
                             </div>
                         </div>
                     </div>
@@ -166,4 +191,12 @@
     <button class="menu-button"><span>Menu</span></button>
     <script src="js/classie.js"></script>
     <script src="js/main.js"></script>
-</body></html>
+  <script>
+   if (!Modernizr.svg) {
+  $("img[src$='.svg']")
+    .attr("src", fallback);
+}
+  </script>
+</body>
+
+</html>

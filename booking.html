@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Tattorium - Eksamensprojekt 2019</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex, nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Tattorium. Tatovør i Københan og Bornholm efter aftale. Blueprint: A basic template for a page stack navigation effect" />
@@ -18,6 +18,30 @@
 
     <script src="js/modernizr-custom.js"></script><!-- Modernizr tells you what HTML, CSS and JavaScript features the user's browser has to offer -->
     <style>
+        .tattooIco {
+            background-image: url('tattooIco.svg');
+        }
+
+        .tattooChair {
+            background-image: url('tattooChair.svg');
+        }
+
+        .artists {
+            background-image: url('painter.svg');
+        }
+
+        .deviantart {
+            background-image: url('deviantart.svg');
+        }
+
+        .guestArtists {
+            background-image: url('guestArtist.svg');
+            background-repeat: no-repeat;
+            width: 7em;
+            height: 7em;
+            margin: 0 auto;
+        }
+
         .overskrift {
             padding-top: 1em;
             text-align: center;
@@ -85,8 +109,8 @@
         <div class="pages-nav__item"><a href="tattoo.html">TATTOOS</a></div>
         <div class="pages-nav__item"><a href="booking.html">BOOKING</a></div>
         <div class="pages-nav__item"><a href="info.html">INFO</a></div>
-        <div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="wish.html">Wish-List</a></div>
-        <div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="artist.html">Guest Artists</a></div>
+        <a class="pages-nav__item pages-nav__item--small" href="wish.html">Wish-List</a>
+        <a class="pages-nav__item pages-nav__item--small" href="artist.html">Guest Artists</a>
         <div class="pages-nav__item pages-nav__item--social">
             <a class="link link--social link--faded" href="https://www.deviantart.com/nis-staack/art/viking-at-hastings-386831493" target="_blank"><i class="fa fa-deviantart"></i><span class="text-hidden">Deviantart</span></a>
             <a class="link link--social link--faded" href="https://www.instagram.com/tattorium/?hl=da" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i><span class="text-hidden">Instagram</span></a>
@@ -114,11 +138,11 @@
                 <span class="bp-header__present">Realistic Tattoo's </span>
                 <p class="bp-header__desc">Tattovør <a href="https://www.deviantart.com/nis-staack/art/viking-at-hastings-386831493"> Nis Staack</a></p>
                 <nav class="bp-nav">
-                    <a class="bp-nav__item bp-icon tattooIco" href="tattoo.htlm" data-info="Se billeder af mine tatoveringer"><span>Tattoes</span></a>
-                    <a class="bp-nav__item bp-icon artists" href="artist.html"><span>Guest Artist</span><br></a>
-                    <a class="bp-nav__item bp-icon tattooChair" href="booking.html" data-info="Bestil tid til en tattoo"><span>Booking</span></a>
+                    <a class="bp-nav__item bp-icon tattooIco" href="tattoo.htlm" data-info="Se Tattoos"><img class="tattooIco" src="tattooIco.svg" alt="Tattorium tattoo" title="Tattorium tattoo" /><span>Tattoes</span></a>
+                    <a class="bp-nav__item bp-icon artists" href="artist.html"><img class="artists" src="painter.svg" alt="Tattorium tattoo" title="Tattorium tattoo" /><span>Guest Artist</span><br></a>
+                    <a class="bp-nav__item bp-icon tattooChair" href="booking.html" data-info="Bestil tid til en tattoo"><img class="tattooChair" src="tattooChair.svg" alt="Tattorium tattoo" title="Tattorium tattoo" /> <span>Booking</span></a>
                     <p class="center">Guest Artist</p>
-                    <a href="index.html"><img class="tattooLogo" src="images/logo.svg" alt="Logo Tattorium" title="Tattorium" /></a>
+                    <a href="index.html"><img class="tattooLogo" src="logo.svg" onerror="this.src='logo.png'" alt="Logo Tattorium" title="Tattorium" /></a>
                 </nav>
             </header>
             <!-- /header -->
@@ -176,8 +200,8 @@
                                 <h2 class="footer-list">Værd a vide</h2>
                                 <ul class="grid-item1">
                                     <li><a href="vedligehold.html">
-                                        Før & efter
-                                    </a></li>
+                                            Før & efter
+                                        </a></li>
                                     <li>
                                         <a href="policy.html">Vores policy</a>
                                     </li>

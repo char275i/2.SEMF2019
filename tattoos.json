@@ -1,142 +1,142 @@
 [{
-    "id": 1,
-    "kategori": "fullback",
-    "navn": "25",
-    "billede": "fullback1"
+        "id": 1,
+        "kategori": "fullback",
+        "navn": "1",
+        "billede": "fullBack1"
 }, {
-    "id": 2,
-    "kategori": "fullback",
-    "navn": "26",
-    "billede": "fullback2"
+        "id": 2,
+        "kategori": "fullback",
+        "navn": "2",
+        "billede": "fullBack2"
 }, {
-    "id": 3,
-    "kategori": "fullback",
-    "navn": "27",
-    "billede": "fullback3"
+        "id": 3,
+        "kategori": "fullback",
+        "navn": "3",
+        "billede": "fullBack3"
 }, {
-    "id": 4,
-    "kategori": "fullback",
-    "navn": "1",
-    "billede": "fullback4"
+        "id": 4,
+        "kategori": "fullback",
+        "navn": "4",
+        "billede": "fullBack4"
 }, {
-    "id": 5,
-   "kategori": "fullback",
-   "navn": "2",
-   "billede": "fullback5"
+        "id": 5,
+        "kategori": "fullback",
+        "navn": "5",
+        "billede": "fullBack5"
 }, {
-    "id": 6,
-    "kategori": "realism",
-    "navn": "3",
-    "billede": "realism0"
+        "id": 6,
+        "kategori": "realism",
+        "navn": "6",
+        "billede": "realism0"
 }, {
-    "id": 7,
-    "kategori": "realism",
-    "navn": "4",
-    "billede": "realism1"
+        "id": 7,
+        "kategori": "realism",
+        "navn": "7",
+        "billede": "realism1"
 }, {
-    "id": 8,
-    "kategori": "realism",
-    "navn": "5",
-    "billede": "realism2"
+        "id": 8,
+        "kategori": "realism",
+        "navn": "8",
+        "billede": "realism2"
 }, {
-    "id": 9,
-    "kategori": "realism",
-    "navn": "6",
-    "billede": "realism3"
+        "id": 9,
+        "kategori": "realism",
+        "navn": "9",
+        "billede": "realism3"
 }, {
-    "id": 10,
-    "kategori": "realism",
-    "navn": "7",
-    "billede": "realism4"
+        "id": 10,
+        "kategori": "realism",
+        "navn": "10",
+        "billede": "realism4"
 }, {
-    "id": 11,
-    "kategori": "realism",
-    "navn": "8",
-    "billede": "realism5"
+        "id": 11,
+        "kategori": "realism",
+        "navn": "11",
+        "billede": "realism5"
 }, {
-    "id": 12,
-    "kategori": "realism",
-    "navn": "9",
-    "billede": "realism6"
+        "id": 12,
+        "kategori": "realism",
+        "navn": "12",
+        "billede": "realism6"
 }, {
-    "id": 13,
-    "kategori": "animal",
-    "navn": "10",
-    "billede": "animal1"
+        "id": 13,
+        "kategori": "animal",
+        "navn": "13",
+        "billede": "animal1"
 }, {
-    "id": 14,
-    "kategori": "animal",
-    "navn": "11",
-    "billede": "animal2"
+        "id": 14,
+        "kategori": "animal",
+        "navn": "14",
+        "billede": "animal2"
 }, {
-    "id": 15,
-    "kategori": "animal",
-    "navn": "12",
-    "billede": "animal3"
+        "id": 15,
+        "kategori": "animal",
+        "navn": "15",
+        "billede": "animal3"
 }, {
-    "id": 16,
-    "kategori": "oldSchool",
-    "navn": "13",
-    "billede": "oldSchool1"
+        "id": 16,
+        "kategori": "oldSchool",
+        "navn": "16",
+        "billede": "oldSchool1"
 }, {
-    "id": 17,
-    "kategori": "oldSchool",
-    "navn": "14",
-    "billede": "oldSchool2"
+        "id": 17,
+        "kategori": "oldSchool",
+        "navn": "17",
+        "billede": "oldSchool2"
 }, {
-    "id": 18,
-    "kategori": "oldSchool",
-    "navn": "15",
-    "billede": "oldSchool3"
+        "id": 18,
+        "kategori": "oldSchool",
+        "navn": "18",
+        "billede": "oldSchool3"
 }, {
-    "id": 19,
-    "kategori": "oldSchool",
-    "navn": "16",
-    "billede": "oldSchool4"
+        "id": 19,
+        "kategori": "oldSchool",
+        "navn": "19",
+        "billede": "oldSchool4"
 }, {
-    "id": 20,
-    "kategori": "horro",
-    "navn": "17",
-    "billede": "horro1"
+        "id": 20,
+        "kategori": "horro",
+        "navn": "20",
+        "billede": "horro1"
 }, {
-    "id": 21,
-    "kategori": "horro",
-    "navn": "18",
-    "billede": "horro2"
+        "id": 21,
+        "kategori": "horro",
+        "navn": "21",
+        "billede": "horro2"
 },
- {
-    "id": 22,
-    "kategori": "horro",
-    "navn": "19",
-    "billede": "horro3"
+    {
+        "id": 22,
+        "kategori": "horro",
+        "navn": "22",
+        "billede": "horro3"
 },
- {
-    "id": 23,
-    "kategori": "horro",
-    "navn": "20",
-    "billede": "horro4"
+    {
+        "id": 23,
+        "kategori": "horro",
+        "navn": "23",
+        "billede": "horro4"
 },
- {
-    "id": 24,
-    "kategori": "horro",
-    "navn": "21",
-    "billede": "horro5"
+    {
+        "id": 24,
+        "kategori": "horro",
+        "navn": "24",
+        "billede": "horro5"
 },
- {
-    "id": 25,
-    "kategori": "horro",
-    "navn": "22",
-    "billede": "horro6"
+    {
+        "id": 25,
+        "kategori": "horro",
+        "navn": "25",
+        "billede": "horro6"
 },
- {
-    "id": 26,
-    "kategori": "horro",
-    "navn": "23",
-    "billede": "horro7"
+    {
+        "id": 26,
+        "kategori": "horro",
+        "navn": "26",
+        "billede": "horro7"
 },
- {
-    "id": 27,
-    "kategori": "horro",
-    "navn": "24",
-    "billede": "horro8"
+    {
+        "id": 27,
+        "kategori": "horro",
+        "navn": "27",
+        "billede": "horro8"
 }]
