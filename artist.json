@@ -1,0 +1,21 @@
+[{
+        "id": 1,
+        "kategori": "alle",
+        "navn": "1",
+        "billede": "fullBack1"
+}, {
+        "id": 2,
+        "kategori": "alle",
+        "navn": "2",
+        "billede": "fullBack2"
+}, {
+        "id": 3,
+        "kategori": "alle",
+        "navn": "3",
+        "billede": "fullBack3"
+}, {
+        "id": 4,
+        "kategori": "alle",
+        "navn": "4",
+        "billede": "fullBack4"
+}]

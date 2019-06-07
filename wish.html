@@ -18,6 +18,13 @@
 
     <script src="js/modernizr-custom.js"></script><!-- Modernizr tells you what HTML, CSS and JavaScript features the user's browser has to offer -->
     <style>
+        img.tegninger {
+            text-align: center !important;
+            display: inline-block;
+            margin: 0 auto;
+            padding: 1em;
+        }
+
         .tattooIco {
             background-image: url('tattooIco.svg');
         }
@@ -138,7 +145,7 @@
                 <span class="bp-header__present">Realistic Tattoo's </span>
                 <p class="bp-header__desc">Tattovør <a href="https://www.deviantart.com/nis-staack/art/viking-at-hastings-386831493"> Nis Staack</a></p>
                 <nav class="bp-nav">
-                    <a class="bp-nav__item bp-icon tattooIco" href="tattoo.html" data-info="Se Tattoos"><img class="tattooIco" src="tattooIco.svg" alt="Tattorium tattoo" title="Tattorium tattoo" /><span>Tattoes</span></a>
+                    <a class="bp-nav__item bp-icon tattooIco" href="tattoo.htlm" data-info="Se Tattoos"><img class="tattooIco" src="tattooIco.svg" alt="Tattorium tattoo" title="Tattorium tattoo" /><span>Tattoes</span></a>
                     <a class="bp-nav__item bp-icon artists" href="artist.html"><img class="artists" src="painter.svg" alt="Tattorium tattoo" title="Tattorium tattoo" /><span>Guest Artist</span><br></a>
                     <a class="bp-nav__item bp-icon tattooChair" href="booking.html" data-info="Bestil tid til en tattoo"><img class="tattooChair" src="tattooChair.svg" alt="Tattorium tattoo" title="Tattorium tattoo" /> <span>Booking</span></a>
                     <p class="center">Guest Artist</p>
@@ -246,7 +253,7 @@
         }
 
         async function hentJson() {
-            let url = "http://medicinolie.dk/semester2F2019/wordpress/wp-json/wp/v2/";
+            let url = "http://medicinolie.dk/semester2F2019/wordpress/wp-json/wp/v2/kunster/44/";
             let jsonData = await fetch(url);
             indhold = await jsonData.json();
             console.log(indhold);
